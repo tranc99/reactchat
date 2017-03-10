@@ -52,8 +52,13 @@ exports.config = {
   // Configure your plugins
   plugins: {
     babel: {
+      // use ES2015, ES2016, ES2017, and the React preset
+      presets: ['latest', 'react'],
       // Do not use ES6 compiler in vendor code
-      ignore: [/web\/static\/vendor/]
+      ignore: [
+        /web\/static\/vendor/,
+        /^node_modules/,
+      ]
     }
   },
 
