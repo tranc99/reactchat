@@ -2,3 +2,7 @@
   <h2><%= gettext "Welcome to %{name}", name: "React Chat!" %></h2>
   <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
 </div>
+
+<div id="test-react">
+  <h1>React on demand!</h1>
+</div>
