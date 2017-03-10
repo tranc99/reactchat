@@ -20,11 +20,14 @@ import "phoenix_html"
 
 // import socket from "./socket"
 
+// import React and libs
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 var ReactIntro = React.createClass({
   render() {
     return(
-      <h1>Hello React</h1>
+      <h1>Hi, I am a React Component</h1>
     );
   }
 });
@@ -32,5 +35,7 @@ var ReactIntro = React.createClass({
 export var App = {
   run: function() {
     console.log('javascript in action!');
+    var elem = document.getElementById("test-react");
+    ReactDOM.render(<ReactIntro />, elem);
   }
 }
