@@ -19,6 +19,16 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+
+
+var ReactIntro = React.createClass({
+  render() {
+    return(
+      <h1>Hello React</h1>
+    );
+  }
+});
+
 export var App = {
   run: function() {
     console.log('javascript in action!');
