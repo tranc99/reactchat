@@ -3,6 +3,7 @@ defmodule Reactchat.UserSocket do
 
   ## Channels
   # channel "room:*", Reactchat.RoomChannel
+  channel "chat:*", Reactchat.ChatChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
